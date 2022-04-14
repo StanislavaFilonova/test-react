@@ -21,3 +21,7 @@ You may also see any lint errors in the console.
 ### Bonus
 
 Без сомнения бонус - это фотография котика
+
+### Ссылка на проект
+
+<https://stanislavafilonova.github.io/test-react/>
