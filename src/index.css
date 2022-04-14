@@ -1,0 +1,13 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+
+@import url(./blocks/header/__logo/header__logo.css);
+@import url(./blocks/header/__title/header__title.css);
+
+@import url(./blocks/page/page.css);
+@import url(./blocks/calculator/calculator.css);
+@import url(./blocks/calculator/__inputs/calculator__inputs.css);
+@import url(./blocks/calculator/__input/calculator__input.css);
+@import url(./blocks/calculator/__result/calculator__result.css);
+@import url(./blocks/calculator/__input/_result/calculator__input_result.css);
+@import url(./blocks/calculator/__button/calculator__button.css);

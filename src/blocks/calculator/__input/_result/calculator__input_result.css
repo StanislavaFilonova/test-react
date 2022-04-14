@@ -1,0 +1,14 @@
+.calculator__input_result {
+    height: 38px;
+    position: relative;
+    width: 250px;
+    padding: 0 45px 0 45px;
+    background: rgb(247, 215, 156);
+    border-radius: 3px;
+    font-size: 17px;
+    line-height: 40px;
+    outline: 2px solid #000;
+    text-align: center;
+    letter-spacing: 1px;
+    border-color: black;
+}
