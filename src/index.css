@@ -1,9 +1,7 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts/fonts.css);
 
-@import url(./blocks/header/__logo/header__logo.css);
-@import url(./blocks/header/__title/header__title.css);
-
+@import url(./components/Header/Header.css);
 @import url(./blocks/page/page.css);
 @import url(./blocks/calculator/calculator.css);
 @import url(./blocks/calculator/__inputs/calculator__inputs.css);

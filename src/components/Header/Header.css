@@ -1,0 +1,22 @@
+.header {
+    padding: 18px 14px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffc466;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+}
+
+.header__title {
+    font-size: 20px;
+    font-weight: 400;
+}
+.header__logo {
+    height: 38px;
+    width: 38px;
+    border-radius: 5px;
+}

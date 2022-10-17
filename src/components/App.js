@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import math from "./Math";
-import cat from "../images/cat.jpeg";
+import Header from './Header/Header';
+import Main from './Main/Main';
 
 //-----------------------------------------------------------------------------------------------------------------------
 
@@ -13,7 +14,7 @@ function App(props) {
     const [second, setSecond] = useState(0);
 
     //-----------------------------------------------------------------------------------------------------------------------
-    
+
     // Установка инпуту числа, введенного пользователем
     function handleChangeFirstNumber(evt) {
         setFirst(evt.target.value);
@@ -25,7 +26,7 @@ function App(props) {
     }
 
     //-----------------------------------------------------------------------------------------------------------------------
-    
+
     // Настраиваем первоначальное значение у инпутов. Здесь они пустые.
     React.useEffect(() => {
         setFirst("");
@@ -33,7 +34,7 @@ function App(props) {
     }, []);
 
     //-----------------------------------------------------------------------------------------------------------------------
-    
+
     // Функция расчета суммы, не забываем отключить обновление формы после нажатия на кнопку
     function countSum(evt) {
         evt.preventDefault();
@@ -75,15 +76,12 @@ function App(props) {
     }
 
     //-----------------------------------------------------------------------------------------------------------------------
-    
+
     // Отрисовка
     return (
         <div className="page">
-            <header>
-                <img className="header__logo" src={cat} alt="кошка"></img>
-                <p className="header__title">Простейший калькулятор</p>
-            </header>
-
+            <Header/>
+            <Main/>
             <form className="calculator">
                 <div className="calculator__inputs">
                     <input
