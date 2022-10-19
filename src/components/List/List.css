@@ -37,6 +37,12 @@
     letter-spacing: -0.04em;
 }
 
+.list__logo {
+    height: 38px;
+    width: 38px;
+    border-radius: 5px;
+}
+
 @media (min-width: 768px) {
     .list {
         padding-top: 90px;
