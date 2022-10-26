@@ -1,9 +1,0 @@
-.calculator__button {
-    flex-direction: row;
-    width: 30px;
-    height: 30px;
-    margin-top: 30px;
-    border-radius: 3px;
-    text-align: center;
-    background-color: rgb(247, 215, 156);
-}

@@ -1,130 +1,40 @@
+// import React, { useState } from "react";
 
-import React, { useState } from "react";
-
+import './Calculator.css';
 
 function Calculator () {
-
-// Используем хук useState, чтобы управлять состоянием переменной и потом пользоваться ей при отрисовке данных.
-    // Первоначально значение переменной (зд. суммы) равно 0.
-
-//     const [count, setCount] = useState(0);
-//     const [first, setFirst] = useState(0);
-//     const [second, setSecond] = useState(0);
-//
-//     //-----------------------------------------------------------------------------------------------------------------------
-//
-//     // Установка инпуту числа, введенного пользователем
-//     function handleChangeFirstNumber(evt) {
-//         setFirst(evt.target.value);
-//     }
-//
-//     // Установка инпуту числа, введенного пользователем
-//     function handleChangeSecondNumber(evt) {
-//         setSecond(evt.target.value);
-//     }
-//
-//     //-----------------------------------------------------------------------------------------------------------------------
-//
-//     // Настраиваем первоначальное значение у инпутов. Здесь они пустые.
-//     React.useEffect(() => {
-//         setFirst("");
-//         setSecond("");
-//     }, []);
-//
-//     //-----------------------------------------------------------------------------------------------------------------------
-//
-//     // Функция расчета суммы, не забываем отключить обновление формы после нажатия на кнопку
-//     function countSum(evt) {
-//         evt.preventDefault();
-//
-//         const s = math.doSum(first, second);
-//         setCount(s);
-//     }
-//
-//     // Функция расчета вычитания, не забываем отключить обновление формы после нажатия на кнопку
-//     function countMin(evt) {
-//         evt.preventDefault();
-//
-//         const s = math.doMin(first, second);
-//         setCount(s);
-//     }
-//
-//     // Функция расчета деления, не забываем отключить обновление формы после нажатия на кнопку
-//     function countDev(evt) {
-//         evt.preventDefault();
-//
-//         const s = math.doDev(first, second);
-//         setCount(s);
-//     }
-//
-//     // Функция расчета умножения, не забываем отключить обновление формы после нажатия на кнопку
-//     function countMult(evt) {
-//         evt.preventDefault();
-//
-//         const s = math.doMult(first, second);
-//         setCount(s);
-//     }
-//
-//     // Функция очистки инпутов
-//     function resertInputs(evt) {
-//         evt.preventDefault();
-//         setCount("");
-//         setFirst("");
-//         setSecond("");
-//     }
-
-    return(
-        <p> Here will be a calculator </p>
-
-//         {/*             <form className="calculator"> */}
-//         {/*                 <div className="calculator__inputs"> */}
-//         {/*                     <input */}
-//         {/*                         className="calculator__input" */}
-//         {/*                         type="number" */}
-//         {/*                         value={first} */}
-//         {/*                         onChange={handleChangeFirstNumber} */}
-//         {/*                     > */}
-//         {/*                         {props.first} */}
-//         {/*                     </input> */}
-//         {/*                     <input */}
-//         {/*                         className="calculator__input" */}
-//         {/*                         type="number" */}
-//         {/*                         value={second} */}
-//         {/*                         onChange={handleChangeSecondNumber} */}
-//         {/*                     > */}
-//         {/*                         {props.second} */}
-//         {/*                     </input> */}
-//         {/*                 </div> */}
-//         {/*                 <div className="calculator__result"> */}
-//         {/*                     <span className="calculator__input_result" type="number"> */}
-//         {/*                         {" "} */}
-//         {/*                         {count} */}
-//         {/*                     </span> */}
-//         {/*                 </div> */}
-//         {/*                 <div className="calculator__resert"> */}
-//         {/*                     <button */}
-//         {/*                         className="calculator__button" */}
-//         {/*                         onClick={resertInputs} */}
-//         {/*                     > */}
-//         {/*                         c */}
-//         {/*                     </button> */}
-//         {/*                 </div> */}
-//         {/*                 <div className="calculator__inputs"> */}
-//         {/*                     <button className="calculator__button" onClick={countSum}> */}
-//         {/*                         + */}
-//         {/*                     </button> */}
-//         {/*                     <button className="calculator__button" onClick={countMin}> */}
-//         {/*                         - */}
-//         {/*                     </button> */}
-//         {/*                     <button className="calculator__button" onClick={countDev}> */}
-//         {/*                         / */}
-//         {/*                     </button> */}
-//         {/*                     <button className="calculator__button" onClick={countMult}> */}
-//         {/*                         * */}
-//         {/*                     </button> */}
-//         {/*                 </div> */}
-//         {/*             </form> */}
-    )
+    return (
+    <div class="calculator-grid">
+            <div class="output">
+                <div class="calculator_iphone">
+                    {/* Отобразить число на дисплее  */}
+                    <div class="calculator_input_display">
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="current-operand"></div>
+            </div>
+            <button class="span-two">AC</button>
+            <button>+/-</button>
+            <button>%</button>
+            <button>÷</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>*</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>-</button>
+            <button>.</button>
+            <button>0</button>
+            <button class="span-two">=</button>
+    </div>
+)
 };
 
 export default Calculator;

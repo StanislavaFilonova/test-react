@@ -3,9 +3,3 @@
 
 @import url(./components/Header/Header.css);
 @import url(./blocks/page/page.css);
-@import url(./blocks/calculator/calculator.css);
-@import url(./blocks/calculator/__inputs/calculator__inputs.css);
-@import url(./blocks/calculator/__input/calculator__input.css);
-@import url(./blocks/calculator/__result/calculator__result.css);
-@import url(./blocks/calculator/__input/_result/calculator__input_result.css);
-@import url(./blocks/calculator/__button/calculator__button.css);
