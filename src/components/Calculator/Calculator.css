@@ -1,8 +1,25 @@
+/* применение стилей ко всем классам */
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+
 .calculator-grid {
     display: grid;
     justify-content: center;
     align-content: center;
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(70px, auto) repeat(5, 70px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+/* поставим курсор на кнопки*/
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid black;
+    outline: none;
+    background-color: #8B8B8B;
 }

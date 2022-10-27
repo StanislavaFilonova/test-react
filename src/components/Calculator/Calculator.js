@@ -6,22 +6,20 @@ function Calculator () {
     return (
     <div class="calculator-grid">
             <div class="output">
-                <div class="calculator_iphone">
-                    {/* Отобразить число на дисплее  */}
-                    <div class="calculator_input_display">
-                        <textarea></textarea>
-                    </div>
-                </div>
+                {/* Отображение ранее введенных цифр */}
+                <div class="previous-operand"></div>
+                {/* Отображение последней введенной цифры */}
                 <div class="current-operand"></div>
             </div>
-            <button class="span-two">AC</button>
+            {/* Отображение кнопок калькулятора */}
+            <button>AC</button>
             <button>+/-</button>
             <button>%</button>
             <button>÷</button>
             <button>1</button>
             <button>2</button>
             <button>3</button>
-            <button>*</button>
+            <button>×️</button>
             <button>4</button>
             <button>5</button>
             <button>6</button>
@@ -31,8 +29,8 @@ function Calculator () {
             <button>9</button>
             <button>-</button>
             <button>.</button>
-            <button>0</button>
-            <button class="span-two">=</button>
+            <button class="span-two">0</button>
+            <button>=</button>
     </div>
 )
 };

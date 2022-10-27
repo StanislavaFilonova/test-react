@@ -1,6 +1,6 @@
 .page{
     text-align: center;
-    background: #ffc466;
+    background: linear-gradient(to right, #e7e81d, #e8701b);
     width: 100vw;
     display: flex;
     align-items: center;
