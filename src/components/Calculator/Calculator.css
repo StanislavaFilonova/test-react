@@ -21,5 +21,55 @@
     font-size: 2rem;
     border: 1px solid black;
     outline: none;
-    background-color: #8B8B8B;
+}
+
+/* Анимация на кнопки, чтобы они меняли цвет при наведении курсора */
+.calculator-grid > button:hover {
+    background-color:#c2c2c2;
+}
+
+/* Размещение кнопки в двух ячейках */
+.span-two {
+    grid-column: span 2;
+    background-color: #A0A0A0
+}
+/* Стилизация темных кнопок */
+.dark-button {
+    background-color: #504848;
+}
+
+/* Стилизация оранжевых кнопок */
+.orange-button {
+    background-color: #ffbf4f;
+}
+
+/* Стилизация обычных кнопок */
+.simple-button {
+    background-color: #A0A0A0;
+}
+
+/* Стилизация поля ввода цифр */
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+/* Стилизация первоначально введенной цифры*/
+.output .previous-operand {
+    color: #dddee3;
+    opacity: 0.75;
+    font-size: 1.5rem;
+}
+
+/* Стилизация второй введенной цифры*/
+.output .current-operand {
+    color: white;
+    font-size: 2.5rem;
 }
